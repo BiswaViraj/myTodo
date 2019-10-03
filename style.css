@@ -19,6 +19,7 @@ header {
     font-size: 32px;
     color: aliceblue;
     padding: 10px;
+    letter-spacing: 0.3em;
 }
 
 .container {
@@ -39,15 +40,22 @@ header {
     background-color: #c177cece;
     height: 50px;
     min-width: 100vw;
-    color: #ffffff;
-    font-size: 20px;
-    padding-bottom: 10px;
-    
-}
-::placeholder{
-    color: #ffffff;
+    color:#ffffff;
     font-size: 20px;
     padding: 10px;
+    text-align: center; 
+    caret-color: #111111;
+}
+
+#input-list:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #e4d5d5;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
 }
 
 .list {
@@ -65,6 +73,9 @@ header {
     height:50px;
     background: #ffffff;
     border: 1px solid grey;
+    border-radius: 10px;
     margin:2px;
-    padding: 10px;
+    padding: 10px 30px;
+    color: #111111;
+
 }
