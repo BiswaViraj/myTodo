@@ -25,33 +25,31 @@ header {
 .container {
     background-color: #ba68c8;
     min-height: 100%;
-    
 }
 
 .create-list {
     display: flex;
     justify-content: center;
-    
 }
 
-#input-list{
+#input-list {
     border: none;
-    border-bottom:2px solid rgb(240, 208, 208);
+    border-bottom: 2px solid rgb(240, 208, 208);
     background-color: #c177cece;
     height: 50px;
     min-width: 100vw;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 20px;
     padding: 10px;
-    text-align: center; 
+    text-align: center;
     caret-color: #111111;
 }
 
-#input-list:focus{
+#input-list:focus {
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     color: #e4d5d5;
     font-size: 20px;
     text-align: center;
@@ -65,17 +63,24 @@ header {
     font-size: 20px;
 }
 
-.list-items{
+.list-items {
     list-style: none;
     padding: 20px;
 }
-.item{
-    height:50px;
-    background: #ffffff;
+.item {
+    height: 50px;
+    background: #ffffff80;
     border: 1px solid grey;
     border-radius: 10px;
-    margin:2px;
+    margin: 2px;
     padding: 10px 30px;
     color: #111111;
-
+}
+.delete{
+    height: 15px;
+    width: 14px;
+    float: right;
+    margin:7px;
+    margin-top: 7px;
+    cursor: pointer;
 }
