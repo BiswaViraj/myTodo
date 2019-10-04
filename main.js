@@ -18,9 +18,11 @@ const deleteTodo = e => {
     let deleteItem = e.target.parentNode;
     let text = deleteItem.innerText;
     // console.log(text);
+
     // search through the todo list to get the index of item to be removed
     let removeIndex = myTodos.indexOf(text);
     // console.log(removeIndex);
+
     // remove the item
     myTodos.splice(removeIndex, 1);
     // update the local storage with the new list

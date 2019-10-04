@@ -68,19 +68,57 @@ header {
     padding: 20px;
 }
 .item {
-    height: 50px;
+    min-height: 50px;
     background: #ffffff80;
     border: 1px solid grey;
     border-radius: 10px;
     margin: 2px;
     padding: 10px 30px;
     color: #111111;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.delete{
+.delete {
     height: 15px;
     width: 14px;
     float: right;
-    margin:7px;
+    margin: 7px;
     margin-top: 7px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 10vh;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        color: aliceblue;
+        padding: 15px;
+        letter-spacing: 0.3em;
+    }
+
+    ::placeholder {
+        color: #e4d5d5;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .list {
+        min-height: 80vh;
+        width: 90vw;
+        margin: 70px auto;
+        font-size: 20px;
+    }
+
+    .item {
+        min-height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
