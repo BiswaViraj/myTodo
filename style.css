@@ -45,13 +45,16 @@ header {
     font-size: 20px;
     padding: 10px;
     text-align: center;
-    caret-color: #111111;
+    caret-color: #ffffff;
 }
 
 #input-list:focus {
     outline: none;
+    background: #115173;
 }
-
+#input-list:focus::placeholder {
+    opacity: 0.5;
+}
 ::placeholder {
     color: #e4d5d5;
     font-size: 20px;
