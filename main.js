@@ -57,7 +57,7 @@ const createListItem = text => {
     li.classList.add("item");
     // create delete icon
     let image = document.createElement("img");
-    image.setAttribute("src", "Assets/multiply.svg");
+    image.setAttribute("src", "Assets/close.svg");
     image.setAttribute("onclick", "deleteTodo(event)");
     image.classList.add("delete");
     // append the img element to the li tag
