@@ -1,3 +1,8 @@
+:root {
+    --main-bg-color: #022c43;
+    --secondary-color: #053f5e;
+    --item-color: #115173;
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background: #022c43;
+    background: var(--main-bg-color);
 }
 
 header {
@@ -25,7 +30,7 @@ header {
 }
 
 .container {
-    background: #022c43;
+    background: var(--main-bg-color);
     min-height: 100%;
 }
 
@@ -37,7 +42,7 @@ header {
 #input-list {
     border: none;
     border-bottom: 2px solid #ddd;
-    background: #053f5e;
+    background: var(--secondary-color);
     height: 50px;
     min-width: 100vw;
     color: #ffffff;
@@ -49,7 +54,7 @@ header {
 
 #input-list:focus {
     outline: none;
-    background: #115173;
+    background: var(--item-color);
 }
 #input-list:focus::placeholder {
     opacity: 0.5;
@@ -74,8 +79,8 @@ header {
 }
 .item {
     min-height: 50px;
-    background: #115173;
-    border: 1px solid #053f5e;
+    background: var(--item-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     margin: 5px;
     padding: 10px 30px;
@@ -93,7 +98,7 @@ header {
     cursor: pointer;
 }
 ::selection {
-    color: #022c43;
+    color: var(--main-bg-color);
     background: #ddd;
 }
 @media only screen and (max-width: 500px) {
